@@ -1,0 +1,19 @@
+items = [1, 2, 3, 2, 4, 1, 5]
+
+seen = set() #this makes a blank set
+repeats = set()
+
+for x in items:
+    if x in seen:
+        repeats.add(x)
+    else:
+        seen.add(x)
+print(repeats)
+        
+
+    
+
+# LOOP YOUR SOURCE (items) NOT THE ACCUMULATOR (seen)
+# A set is a container that holds unique values without an order. 
+# list (ordered, can have dupes), dict (address book), and set (unordered no duplicates)
+# ok .split is a string thing, .append is a list thing, and .get() is a dict thing. 

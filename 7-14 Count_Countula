@@ -1,0 +1,19 @@
+sentence = "the cat sat on the mat"
+
+words = sentence.split()
+
+counts = {}
+
+for x in words:
+    counts[x] = counts.get(x, 0) + 1
+print(counts)
+
+
+# Ok just for some notes, in a loop any VARIABLE[LOOP VAR like x] means look up the value stored under this key. Left of the equal size is always write, and right is read
+# for dictionary values. a VARIABLE[LOOP VAR like x] + 1 on the right side finds whatever is stored under the word and just adds 1, 
+# so if nothing is stored it gives a keyerror
+# Square brackets as a whole is a lookup syntax that says grab this thing at this address, with dictionaries directly its "go grab this key". Parentheses are calling a 
+# function or method so you always call something like .get with paraen
+# .get is formated like .get(key, fallback) and its a safe way to dict lookup by fetching the value for a key, but returns the fallback instead of crashing if that key
+# doesn't exist. if you do counts["cat"] and its not there it will blow up, counts.get("cat", 0) gives an out, returns 0, if cat isn't there
+# OH MY GOD IM ACTUALLY ENJOYING PROGRAMMING HOLY MOLY THANK GOD

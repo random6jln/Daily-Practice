@@ -1,0 +1,16 @@
+number = input("Please enter a number! ")
+number = int(number)
+
+for i in range(1, number +1):
+    if i % 5 == 0 and i % 3 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
+
+# i is basically like an integer placeholder that walks through the number, kind of like a zipper, until it gets to the required number (labeled creatively as number). It starts at 1, and walks through number adding one each time.
+# range starts at 1 (or the listed value) and stops 1 BEFORE the number (hence the +1)
+# remember to use the largest piece of logic at the top and then branch from there to save memeory/ easier flow. This is where it all began! Day 1/?
