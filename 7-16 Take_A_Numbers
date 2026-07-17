@@ -1,0 +1,17 @@
+total = 0
+count = 0
+
+with open("numbers.txt") as f:
+    #everything under this line can access the file listed
+
+    for line in f:
+        count = count + 1
+        total = total + int(line.strip())
+average = total / count
+
+print(total)
+print(average)
+
+#Make a file called numbers.txt with one number per line — five or six of them, whatever you like. Then in a blank .py file, read it and print the total and the average.
+# I could have also used a list like numbers = [] and then had the logic under the loop be numbers.apend(int(line.strip()))
+# with the end result being total = sum(numbers) and average = total / len(numbers), but my way was more memory efficient for the task and I figured it out solo 
